@@ -7,16 +7,17 @@
 
 import UIKit
 
-var showppingList = ["수건", "양말", "핸드폰"]
+
 
 class Case3TableViewController: UITableViewController {
 
+    var showpping = ShowppingArray()
+    
     @IBOutlet var addshowppingTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     
     }
 
     
@@ -30,7 +31,7 @@ class Case3TableViewController: UITableViewController {
         if text == "" {
             tryAgainShowAlert()
         } else {
-            showppingList.append(text)
+           // showpping.list.append()
             tableView.reloadData()
         }
         
@@ -42,13 +43,18 @@ class Case3TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        showppingList.count
+        showpping.list.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "showppingList")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifire) as! CustomTableViewCell
         
-        cell.textLabel?.text = showppingList[indexPath.row]
+        let row = showpping.list[indexPath.row]
+        
+        cell.check(row: row)
+        
+      
+        
         return cell
         
     }
