@@ -21,17 +21,22 @@ class Case3TableViewController: UITableViewController {
 
     
     @IBAction func addShowppingList(_ sender: UIButton) {
-        
-        if addshowppingTextField.text == ""{
-            showAlert()
+       
+        guard let text = addshowppingTextField.text else {
+            optionalShowAlert()
+            return
         }
-            else {
-                showppingList.append(addshowppingTextField.text!)
-                
-                
-                tableView.reloadData()
-        
+    
+        if text == "" {
+            tryAgainShowAlert()
+        } else {
+            showppingList.append(text)
+            tableView.reloadData()
         }
+        
+      
+                
+        
         
         
     }
