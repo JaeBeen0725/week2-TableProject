@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="No2-hi-QVo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V1A-Sw-E08">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -24,6 +24,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+        <!--Exercise Table View Controller-->
+        <scene sceneID="6Fr-40-vmA">
+            <objects>
+                <tableViewController id="V1A-Sw-E08" customClass="ExerciseTableViewController" customModule="week2_TableProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="PSE-65-cLv">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseTableViewCell" rowHeight="73" id="FGb-fH-5cZ" customClass="ExerciseTableViewCell" customModule="week2_TableProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="430" height="73"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FGb-fH-5cZ" id="AM6-wV-4ku">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="73"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZg-TD-ai3">
+                                            <rect key="frame" x="8" y="11" width="414" height="51"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b70-HY-uj5">
+                                                    <rect key="frame" x="1" y="1" width="44" height="49"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="6pc-ZC-FRN"/>
+                                                        <constraint firstAttribute="height" constant="44" id="M5n-XQ-wwU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJX-ze-id7">
+                                                    <rect key="frame" x="369" y="1" width="44" height="49"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="QNs-ov-ymD"/>
+                                                        <constraint firstAttribute="width" constant="44" id="V4L-Es-c6p"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                    <connections>
+                                                        <action selector="chckBoxButtonTapped:" destination="FGb-fH-5cZ" eventType="touchUpInside" id="a7w-7X-a8i"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ab-cw-Xj8">
+                                                    <rect key="frame" x="46" y="1" width="322" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="b70-HY-uj5" firstAttribute="top" secondItem="SZg-TD-ai3" secondAttribute="top" constant="1" id="1ai-Xj-3wD"/>
+                                                <constraint firstItem="XJX-ze-id7" firstAttribute="leading" secondItem="3ab-cw-Xj8" secondAttribute="trailing" constant="1" id="2rt-PJ-qqr"/>
+                                                <constraint firstAttribute="bottom" secondItem="3ab-cw-Xj8" secondAttribute="bottom" constant="1" id="Hmq-8Y-i6b"/>
+                                                <constraint firstItem="b70-HY-uj5" firstAttribute="leading" secondItem="SZg-TD-ai3" secondAttribute="leading" constant="1" id="MXg-Hp-0z2"/>
+                                                <constraint firstItem="3ab-cw-Xj8" firstAttribute="top" secondItem="SZg-TD-ai3" secondAttribute="top" constant="1" id="NPR-K2-c5x"/>
+                                                <constraint firstItem="3ab-cw-Xj8" firstAttribute="leading" secondItem="b70-HY-uj5" secondAttribute="trailing" constant="1" id="PWB-az-HJo"/>
+                                                <constraint firstAttribute="trailing" secondItem="XJX-ze-id7" secondAttribute="trailing" constant="1" id="WtR-xg-2Ql"/>
+                                                <constraint firstAttribute="bottom" secondItem="XJX-ze-id7" secondAttribute="bottom" constant="1" id="dMg-rb-kbH"/>
+                                                <constraint firstAttribute="bottom" secondItem="b70-HY-uj5" secondAttribute="bottom" constant="1" id="k8C-Q3-aY6"/>
+                                                <constraint firstItem="XJX-ze-id7" firstAttribute="top" secondItem="SZg-TD-ai3" secondAttribute="top" constant="1" id="rWD-bQ-SUs"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="SZg-TD-ai3" secondAttribute="bottom" constant="11" id="Ngw-fX-w0w"/>
+                                        <constraint firstAttribute="trailing" secondItem="SZg-TD-ai3" secondAttribute="trailing" constant="8" id="VMJ-H0-UqI"/>
+                                        <constraint firstItem="SZg-TD-ai3" firstAttribute="top" secondItem="AM6-wV-4ku" secondAttribute="top" constant="11" id="jnf-KQ-smD"/>
+                                        <constraint firstItem="SZg-TD-ai3" firstAttribute="leading" secondItem="AM6-wV-4ku" secondAttribute="leading" constant="8" id="t1c-FK-c3v"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkBoxButton" destination="XJX-ze-id7" id="e1e-tm-JYt"/>
+                                    <outlet property="exerciseTitleLabel" destination="3ab-cw-Xj8" id="j28-Np-BhA"/>
+                                    <outlet property="starImageView" destination="b70-HY-uj5" id="g5u-VK-kxf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="V1A-Sw-E08" id="xKU-a0-9JN"/>
+                            <outlet property="delegate" destination="V1A-Sw-E08" id="jhw-Ws-Kcf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvr-S5-W0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.02325581395348" y="740.98712446351931"/>
         </scene>
         <!--case1-->
         <scene sceneID="5Of-Fz-Pql">
@@ -383,7 +467,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSC-bb-Pa6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3446.5648854961833" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="3366" y="-27"/>
         </scene>
         <!--Movie Table View Controller-->
         <scene sceneID="eQm-T6-nfr">
@@ -533,7 +617,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iID-kW-lHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6057.2093023255811" y="-27.682403433476395"/>
+            <point key="canvasLocation" x="3505" y="689"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mH2-8w-rqu">
@@ -553,10 +637,11 @@
             </objects>
             <point key="canvasLocation" x="2680" y="-27"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="fiQ-nU-Fc3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="No2-hi-QVo" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UINavigationController-No2-hi-QVo" automaticallyAdjustsScrollViewInsets="NO" id="No2-hi-QVo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZzL-HO-swP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ch5-df-0hu">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -569,7 +654,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqE-MB-rks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5158.604651162791" y="-27.682403433476395"/>
+            <point key="canvasLocation" x="2608" y="689"/>
         </scene>
     </scenes>
     <resources>
