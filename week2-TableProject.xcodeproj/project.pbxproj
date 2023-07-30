@@ -25,6 +25,10 @@
 		6E9F6B4C2A73D08700478C92 /* MovieFoodTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9F6B4B2A73D08700478C92 /* MovieFoodTray.swift */; };
 		6EB053FF2A75368400C210A7 /* ExerciseCellValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB053FE2A75368400C210A7 /* ExerciseCellValue.swift */; };
 		6EB054012A7536AA00C210A7 /* ExerciseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054002A7536AA00C210A7 /* ExerciseArray.swift */; };
+		6EB054042A7625D100C210A7 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054032A7625D100C210A7 /* MusicTableViewController.swift */; };
+		6EB054062A7625EC00C210A7 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054052A7625EC00C210A7 /* MusicTableViewCell.swift */; };
+		6EB054082A76260E00C210A7 /* MusicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054072A76260E00C210A7 /* MusicArray.swift */; };
+		6EB0540A2A76273400C210A7 /* MusicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054092A76273400C210A7 /* MusicValue.swift */; };
 		6EC5481A2A74E3A600ACD42C /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC548192A74E3A600ACD42C /* ExerciseTableViewController.swift */; };
 		6EC5481C2A74E3D900ACD42C /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5481B2A74E3D900ACD42C /* ExerciseTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,10 @@
 		6E9F6B4B2A73D08700478C92 /* MovieFoodTray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFoodTray.swift; sourceTree = "<group>"; };
 		6EB053FE2A75368400C210A7 /* ExerciseCellValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellValue.swift; sourceTree = "<group>"; };
 		6EB054002A7536AA00C210A7 /* ExerciseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseArray.swift; sourceTree = "<group>"; };
+		6EB054032A7625D100C210A7 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		6EB054052A7625EC00C210A7 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		6EB054072A76260E00C210A7 /* MusicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArray.swift; sourceTree = "<group>"; };
+		6EB054092A76273400C210A7 /* MusicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicValue.swift; sourceTree = "<group>"; };
 		6EC548192A74E3A600ACD42C /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		6EC5481B2A74E3D900ACD42C /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +92,7 @@
 		6E21B1EF2A724CE400D7613A /* week2-TableProject */ = {
 			isa = PBXGroup;
 			children = (
+				6EB054022A7624FC00C210A7 /* TableViewPractice2 */,
 				6EC548182A74E09900ACD42C /* TableViewPractice1 */,
 				6E9F6B412A73C81300478C92 /* case3 */,
 				6E9F6B422A73CF1200478C92 /* Movie */,
@@ -120,6 +129,17 @@
 				6E9F6B4B2A73D08700478C92 /* MovieFoodTray.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		6EB054022A7624FC00C210A7 /* TableViewPractice2 */ = {
+			isa = PBXGroup;
+			children = (
+				6EB054032A7625D100C210A7 /* MusicTableViewController.swift */,
+				6EB054052A7625EC00C210A7 /* MusicTableViewCell.swift */,
+				6EB054072A76260E00C210A7 /* MusicArray.swift */,
+				6EB054092A76273400C210A7 /* MusicValue.swift */,
+			);
+			path = TableViewPractice2;
 			sourceTree = "<group>";
 		};
 		6EC548182A74E09900ACD42C /* TableViewPractice1 */ = {
@@ -206,6 +226,7 @@
 			files = (
 				6E9F6B4C2A73D08700478C92 /* MovieFoodTray.swift in Sources */,
 				6E9F6B462A73CF7C00478C92 /* MovieTableViewController.swift in Sources */,
+				6EB0540A2A76273400C210A7 /* MusicValue.swift in Sources */,
 				6E21B20B2A728D9D00D7613A /* Case3TableViewController.swift in Sources */,
 				6E9F6B3E2A73AD2400478C92 /* CustomShowpingList.swift in Sources */,
 				6E21B1F52A724CE400D7613A /* ViewController.swift in Sources */,
@@ -215,8 +236,11 @@
 				6EB053FF2A75368400C210A7 /* ExerciseCellValue.swift in Sources */,
 				6E9F6B3C2A73AB5300478C92 /* CustomTableViewCell.swift in Sources */,
 				6E21B2092A72647500D7613A /* Case2TableViewController.swift in Sources */,
+				6EB054042A7625D100C210A7 /* MusicTableViewController.swift in Sources */,
+				6EB054062A7625EC00C210A7 /* MusicTableViewCell.swift in Sources */,
 				6E9F6B402A73B44000478C92 /* ShowppingArray.swift in Sources */,
 				6EC5481A2A74E3A600ACD42C /* ExerciseTableViewController.swift in Sources */,
+				6EB054082A76260E00C210A7 /* MusicArray.swift in Sources */,
 				6E21B20D2A72988700D7613A /* alert.swift in Sources */,
 				6E9F6B482A73CFC400478C92 /* MovieTableViewCell.swift in Sources */,
 				6E9F6B4A2A73D00F00478C92 /* MovieArray.swift in Sources */,
